@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
-    :root{--bg:#ffffff;--text:#0f172a;--muted:#475569;--link:#0ea5e9;--accent:#0c4a6e;--card:#f8fafc;--border:#e2e8f0;--maxw:1000px}
+    :root{--bg:#ffffff;--text:#0f172a;--muted:#475569;--link:#0a5e97;--accent:#0c4a6e;--card:#f8fafc;--border:#e2e8f0;--maxw:1000px}
     html,body{height:100%}
     body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.7}
     .container{max-width:var(--maxw);margin:0 auto;padding:0 1.1rem}
@@ -20,17 +20,25 @@
     .menu a{color:var(--text);text-decoration:none;font-weight:500}
     .menu a:hover{color:var(--link)}
     .menu a.active{color:var(--link);font-weight:700}
-    .hero{padding:3rem 0}
-    .grid{display:grid;grid-template-columns:340px 1fr;gap:2rem;align-items:start}
+
+    .hero{padding:3.5rem 0}
+    .grid{display:grid;grid-template-columns:260px 1fr;gap:2.5rem;align-items:start}
     .portrait{width:100%;border-radius:12px;border:1px solid var(--border);background:var(--card)}
-    h1{font-size:clamp(2rem,3vw,2.6rem);margin:.25rem 0 1rem}
-    .lead{font-size:1rem}
-    .pill-links{display:flex;gap:.75rem;flex-wrap:wrap;margin:1rem 0 1.25rem}
-    .pill-links a{border:1px solid var(--border);background:var(--card);padding:.5rem .85rem;border-radius:999px;text-decoration:none;color:var(--accent);font-weight:600}
-    .pill-links a:hover{border-color:var(--accent)}
+
+    h1{font-size:clamp(2rem,3vw,2.6rem);margin:.25rem 0 1rem;text-align:center}
+    .lead{font-size:1rem;margin-bottom:1.3rem}
+
+    /* Plain inline links for CV & JMP */
+    .plain-links{margin:.75rem 0 1.25rem;}
+    .plain-links a{color:var(--link);text-decoration:underline;font-weight:500;margin-right:1.2rem;}
+
     .muted{color:var(--muted)}
-    .section{padding:2rem 0;border-top:1px solid var(--border)}
-    footer{padding:2rem 0 3rem;color:var(--muted)}
+    .refs{line-height:1.9;margin-top:.5rem;}
+
+    .hero p{margin:.9rem 0 1.3rem;}
+    .section{padding:2.6rem 0;border-top:1px solid var(--border)}
+
+    footer{padding:2rem 0 3rem;color:var(--muted);text-align:right;font-size:0.75rem}
     @media (max-width:860px){.grid{grid-template-columns:1fr}.hero{padding:2rem 0}}
   </style>
 </head>
@@ -51,35 +59,30 @@
   <section class="hero">
     <div class="grid">
       <div>
-        <img class="portrait" src="headshot.jpg" alt="Headshot of Your Name" />
+        <img class="portrait" src="headshot.jpg" alt="Headshot of Tammy Sunju Lee" />
       </div>
       <div>
         <h1>Tammy Sunju Lee</h1>
         <p class="lead">Welcome! I am a Ph.D. candidate in the Department of Economics at <span class="muted">University of Michigan, Ann Arbor</span>. I am on the 2025–2026 job market.</p>
         <p>I am an applied microeconomist working at the intersection of labor and public economics, with a particular focus on topics related to family, gender, and workplace policies.</p>
-        <div class="pill-links">
+
+        <div class="plain-links">
           <a href="cv.pdf" target="_blank" rel="noopener">Curriculum Vitae</a>
           <a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/tammylee0524/JobMarketMaterials/main/Tammy_Lee_Mandate_Fertility.pdf" target="_blank" rel="noopener">JMP</a>
-          <!-- <a href="research.html">Research</a> -->
         </div>
-        <p><strong>E‑mail:</strong> <a href="mailto:tammlee@umich.edu">tammlee@umich.edu</a></p>
-        <p class="muted"><strong>References:</strong><br> 
+
+        <p><strong>E-mail:</strong> <a href="mailto:tammlee@umich.edu">tammlee@umich.edu</a></p>
+
+        <p class="muted refs"><strong>References:</strong><br>
           Chair: Basit Zafar<br>
-          Sarah Miller, Ana Reynoso, Benjamin Scuderi.</p>
+          Sarah Miller, Ana Reynoso, Benjamin Scuderi.
+        </p>
       </div>
     </div>
   </section>
 
-  <!-- <section class="section">
-    <h2>News</h2>
-    <ul>
-      <li>Job market paper updated — <a href="jmp.pdf" target="_blank">PDF</a>.</li>
-      <li>Upcoming talk at XYZ Workshop, Month YYYY.</li>
-    </ul>
-  </section> -->
-
   <footer>
-    <p> <span id="y"></span> Tammy Sunju Lee • Last updated <time id="lu"></time></p>
+    <p><span id="y"></span> Last updated <time id="lu"></time></p>
   </footer>
 </main>
 <script>
