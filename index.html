@@ -3,185 +3,86 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Your Name</title>
+  <title>Tammy Sunju Lee</title>
   <meta name="description" content="PhD candidate in Economics. Labor & public economics." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
-    :root{
-      --bg: #ffffff;
-      --text: #0f172a; /* slate-900 */
-      --muted: #475569; /* slate-600 */
-      --link: #0ea5e9; /* sky-500 */
-      --accent: #0c4a6e; /* sky-900 */
-      --card: #f8fafc; /* slate-50 */
-      --border: #e2e8f0; /* slate-200 */
-      --maxw: 1000px;
-    }
+    :root{--bg:#ffffff;--text:#0f172a;--muted:#475569;--link:#0ea5e9;--accent:#0c4a6e;--card:#f8fafc;--border:#e2e8f0;--maxw:1000px}
     html,body{height:100%}
-    body{
-      margin:0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-      color:var(--text); background:var(--bg); line-height:1.6;
-    }
-    /* Layout */
-    .container{max-width:var(--maxw); margin:0 auto; padding:0 1.1rem}
-    header{position:sticky; top:0; backdrop-filter: saturate(180%) blur(8px); background:rgba(255,255,255,.8); border-bottom:1px solid var(--border); z-index:10}
-    .nav{display:flex; align-items:center; justify-content:space-between; height:64px}
-    .brand{font-weight:700; letter-spacing:.2px}
-    .menu{display:flex; gap:1rem}
-    .menu a{color:var(--text); text-decoration:none; font-weight:500}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.7}
+    .container{max-width:var(--maxw);margin:0 auto;padding:0 1.1rem}
+    header{position:sticky;top:0;backdrop-filter:saturate(180%) blur(8px);background:rgba(255,255,255,.85);border-bottom:1px solid var(--border);z-index:10}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+    .brand{font-weight:700}
+    .menu{display:flex;gap:1rem}
+    .menu a{color:var(--text);text-decoration:none;font-weight:500}
     .menu a:hover{color:var(--link)}
+    .menu a.active{color:var(--link);font-weight:700}
     .hero{padding:3rem 0}
-    .grid{display:grid; grid-template-columns: 340px 1fr; gap:2rem; align-items:start}
-    .portrait{width:100%; border-radius:12px; border:1px solid var(--border); background:var(--card)}
-    h1{font-size: clamp(2rem, 3vw, 2.75rem); line-height:1.2; margin:.25rem 0 1rem}
-    p{margin:.4rem 0 1rem}
-    .lead{font-size:1.05rem}
-    .pill-links{display:flex; gap:.75rem; flex-wrap:wrap; margin:.5rem 0 1.25rem}
-    .pill-links a{border:1px solid var(--border); background:var(--card); padding:.5rem .8rem; border-radius:999px; text-decoration:none; color:var(--accent); font-weight:600}
+    .grid{display:grid;grid-template-columns:340px 1fr;gap:2rem;align-items:start}
+    .portrait{width:100%;border-radius:12px;border:1px solid var(--border);background:var(--card)}
+    h1{font-size:clamp(2rem,3vw,2.6rem);margin:.25rem 0 1rem}
+    .lead{font-size:1.06rem}
+    .pill-links{display:flex;gap:.75rem;flex-wrap:wrap;margin:1rem 0 1.25rem}
+    .pill-links a{border:1px solid var(--border);background:var(--card);padding:.5rem .85rem;border-radius:999px;text-decoration:none;color:var(--accent);font-weight:600}
     .pill-links a:hover{border-color:var(--accent)}
     .muted{color:var(--muted)}
-    .section{padding:2rem 0; border-top:1px solid var(--border)}
-    .refs li{margin:.25rem 0}
-    footer{padding:2rem 0 3rem; color:var(--muted)}
-    /* Mobile */
-    @media (max-width: 860px){
-      .grid{grid-template-columns:1fr;}
-      .portrait{max-width:420px}
-      .hero{padding:2rem 0}
-    }
-    /* Simple skip link for accessibility */
-    .skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
-    .skip-link:focus{position:static;width:auto;height:auto;background:var(--card);padding:.5rem;border:1px solid var(--border)}
+    .section{padding:2rem 0;border-top:1px solid var(--border)}
+    footer{padding:2rem 0 3rem;color:var(--muted)}
+    @media (max-width:860px){.grid{grid-template-columns:1fr}.hero{padding:2rem 0}}
   </style>
 </head>
 <body>
-<a href="#main" class="skip-link">Skip to content</a>
 <header>
   <div class="container nav">
-    <div class="brand">Your Name</div>
+    <div class="brand">Tammy Sunju Lee</div>
     <nav class="menu" aria-label="Primary">
-      <a href="#home">Home</a>
-      <a href="#cv">CV</a>
-      <a href="#research">Research</a>
-      <a href="#teaching">Teaching</a>
+      <a class="active" href="index.html">Home</a>
+      <a href="cv.html">CV</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
     </nav>
   </div>
 </header>
 
-<main id="main" class="container">
-  <!-- HERO -->
-  <section id="home" class="hero">
+<main class="container">
+  <section class="hero">
     <div class="grid">
       <div>
-        <!-- Replace src with your headshot file name placed in the same folder -->
         <img class="portrait" src="headshot.jpg" alt="Headshot of Your Name" />
       </div>
       <div>
-        <h1>Your Name</h1>
-        <p class="lead">Welcome to my page! I am a Ph.D. candidate in the Department of Economics at <span class="muted">Your University</span>. I am on the 2025–2026 job market.</p>
-        <p>I am an applied microeconomist working at the intersection of labor and public economics, with a focus on gender, family, and inequality.</p>
-
+        <h1>Tammy Sunju Lee</h1>
+        <p class="lead">Welcome! I am a Ph.D. candidate in the Department of Economics at <span class="muted">University of Michigan, Ann Arbor</span>. I am on the 2025–2026 job market.</p>
+        <p>I study labor and public economics, with a focus on family, gender, and workplace policies.</p>
         <div class="pill-links">
-          <!-- Replace with real links (PDFs or pages) -->
           <a href="cv.pdf" target="_blank" rel="noopener">Curriculum Vitae</a>
-          <a href="jmp.pdf" target="_blank" rel="noopener">JMP</a>
+          <a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/tammylee0524/JobMarketMaterials/main/Tammy_Lee_Mandate_Fertility.pdf" target="_blank" rel="noopener">JMP</a>
+          <a href="research.html">Research</a>
         </div>
-
-        <p><strong>E‑mail:</strong> <a href="mailto:you@university.edu">you@university.edu</a></p>
-
-        <p class="muted"><strong>References</strong>: Co‑Chairs: Advisor One and Advisor Two. Other committee members: Member A, Member B, Member C.</p>
+        <p><strong>E‑mail:</strong> <a href="mailto:tammlee@umich.edu">tammlee@umich.edu</a></p>
+        <p class="muted"><strong>References:</strong> Basit Zafar (Chair), Sarah Miller, Ana Reynoso, Benjamin Scuderi.</p>
       </div>
     </div>
   </section>
 
-  <!-- CV (either link to a PDF or list highlights) -->
-  <section id="cv" class="section">
-    <h2>CV</h2>
-    <p>Download my latest <a href="cv.pdf" target="_blank" rel="noopener">CV (PDF)</a>. You can also list highlights below or remove this section.</p>
-  </section>
-
-  <!-- Research -->
-  <section id="research" class="section">
-    <h2>Research</h2>
-
-    <style>
-      .papers{max-width: 860px}
-      .subhead{margin:2rem 0 1rem; font-weight:700; font-size:1.5rem; color:var(--accent)}
-      .paper{margin:1.25rem 0 2rem}
-      .paper-title{font-size:1.05rem; font-weight:600; line-height:1.4}
-      .paper-title a{color:#0a5e97; text-decoration:underline}
-      .meta{color:var(--muted); font-size:.95rem; margin:.35rem 0 .75rem}
-      .abstract{margin:.5rem 0 0}
-      .divider{border-top:1px solid var(--border); margin:2rem 0}
-      .inline-link{margin-left:.5rem; font-weight:600}
-    </style>
-
-    <div class="papers">
-      <div class="subhead">Working Papers</div>
-
-      <article class="paper">
-        <div class="paper-title">
-          <a href="jmp.pdf" target="_blank" rel="noopener">Your JMP Title Goes Here</a>
-          <span class="meta">(Job Market Paper)</span>
-        </div>
-        <div class="meta">Conference appearances / seminars, etc. (optional)</div>
-        <p class="abstract">One–paragraph summary of the paper. 2–4 sentences explaining question, design, data, and headline result. Keep it tight and readable.</p>
-      </article>
-
-      <article class="paper">
-        <div class="paper-title">
-          <a href="#" target="_blank" rel="noopener">Second Working Paper Title</a>
-          <span class="meta">(with Coauthor A and Coauthor B)</span>
-        </div>
-        <p class="abstract">Brief 2–3 sentence description. <a class="inline-link" href="#" target="_blank" rel="noopener">PDF</a> <a class="inline-link" href="#" target="_blank" rel="noopener">slides</a></p>
-      </article>
-
-      <div class="divider"></div>
-
-      <div class="subhead">Publications</div>
-      <article class="paper">
-        <div class="paper-title">
-          <a href="#" target="_blank" rel="noopener">Published Paper Title</a>
-          <span class="meta">Journal Name, year, vol(issue):pages</span>
-        </div>
-      </article>
-
-      <div class="divider"></div>
-
-      <div class="subhead">Selected Research in Progress</div>
-      <ul>
-        <li>"Project Title A" (with Coauthor). <a class="inline-link" href="#">slides</a></li>
-        <li>"Project Title B" (with Coauthor).
-          <a class="inline-link" href="#">slides</a>
-        </li>
-        <li>"Project Title C".
-          <a class="inline-link" href="#">slides</a>
-        </li>
-      </ul>
-
-    </div>
-  </section>
-
-  <!-- Teaching -->
-  <section id="teaching" class="section">
-    <h2>Teaching</h2>
+  <!-- <section class="section">
+    <h2>News</h2>
     <ul>
-      <li>Course A (Term). Role, evaluations, materials.</li>
-      <li>Course B…</li>
+      <li>Job market paper updated — <a href="jmp.pdf" target="_blank">PDF</a>.</li>
+      <li>Upcoming talk at XYZ Workshop, Month YYYY.</li>
     </ul>
-  </section>
+  </section> -->
 
-  <footer class="container">
-    <p>© <span id="y"></span> Your Name • Last updated <time id="lu"></time></p>
+  <footer>
+    <p>© <span id="y"></span> Tammy Sunju Lee • Last updated <time id="lu"></time></p>
   </footer>
 </main>
-
 <script>
-  // small niceties
-  document.getElementById('y').textContent = new Date().getFullYear();
-  document.getElementById('lu').textContent = new Date().toLocaleDateString();
+  document.getElementById('y').textContent=new Date().getFullYear();
+  document.getElementById('lu').textContent=new Date().toLocaleDateString();
 </script>
 </body>
 </html>

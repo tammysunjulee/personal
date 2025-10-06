@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tammy Sunju Lee — CV</title>
+  <meta name="description" content="Curriculum Vitae of Your Name." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#ffffff;--text:#0f172a;--muted:#475569;--link:#0ea5e9;--accent:#0c4a6e;--card:#f8fafc;--border:#e2e8f0;--maxw:900px}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.7}
+    .container{max-width:var(--maxw);margin:0 auto;padding:0 1.1rem}
+    header{position:sticky;top:0;background:rgba(255,255,255,.85);border-bottom:1px solid var(--border);backdrop-filter:saturate(180%) blur(8px);z-index:10}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+    .brand{font-weight:700}
+    .menu{display:flex;gap:1rem}
+    .menu a{color:var(--text);text-decoration:none;font-weight:500}
+    .menu a:hover{color:var(--link)}
+    .menu a.active{color:var(--link);font-weight:700}
+    main{padding:2.2rem 0}
+    h1{font-size:clamp(1.8rem,3vw,2.2rem);margin:.25rem 0 1.2rem}
+    h2{font-size:1.35rem;color:var(--accent);margin:2rem 0 .6rem}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1rem 1.2rem}
+    footer{padding:2rem 0 3rem;color:var(--muted)}
+  </style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <div class="brand">Tammy Sunju Lee</div>
+    <nav class="menu" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="cv.html" class="active">CV</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h1>Curriculum Vitae</h1>
+
+  <p class="card">Download the latest: <a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/tammylee0524/JobMarketMaterials/main/cv.pdf" target="_blank" rel="noopener">CV (PDF)</a>. T
+  <footer>
+    <p>© <span id="y"></span> Tammy Sunju Lee • Last updated <time id="lu"></time></p>
+  </footer>
+</main>
+<script>
+  document.getElementById('y').textContent=new Date().getFullYear();
+  document.getElementById('lu').textContent=new Date().toLocaleDateString();
+</script>
+</body>
+</html>
