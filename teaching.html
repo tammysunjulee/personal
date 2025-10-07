@@ -4,12 +4,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Tammy Sunju Lee — Teaching</title>
-  <meta name="description" content="Teaching portfolio of Your Name." />
+  <meta name="description" content="Teaching portfolio of Tammy Sunju Lee." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
-    :root{--bg:#ffffff;--text:#0f172a;--muted:#475569;--link:#0ea5e9;--accent:#0c4a6e;--card:#f8fafc;--border:#e2e8f0;--maxw:900px}
+    :root{--bg:#ffffff;--text:#0f172a;--muted:#475569;--link:#0a5e97;--accent:#0c4a6e;--border:#e2e8f0;--maxw:900px}
     body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.7}
     .container{max-width:var(--maxw);margin:0 auto;padding:0 1.1rem}
     header{position:sticky;top:0;background:rgba(255,255,255,.85);border-bottom:1px solid var(--border);backdrop-filter:saturate(180%) blur(8px);z-index:10}
@@ -19,12 +19,17 @@
     .menu a{color:var(--text);text-decoration:none;font-weight:500}
     .menu a:hover{color:var(--link)}
     .menu a.active{color:var(--link);font-weight:700}
-    main{padding:2.2rem 0}
-    h1{font-size:clamp(1.8rem,3vw,2.2rem);margin:.25rem 0 1.2rem}
-    h2{font-size:1.35rem;color:var(--accent);margin:2rem 0 .6rem}
-    .course{border-top:1px solid var(--border);padding-top:1rem;margin-top:1rem}
-    .meta{color:var(--muted);font-size:.95rem}
-    footer{padding:2rem 0 3rem;color:var(--muted);text-align:right;font-size:0.75rem}
+
+    main{padding:2.2rem 0 3rem}
+    /* We omit a page H1 to match the reference image that starts with role headings */
+
+    h2.role{font-size:1.45rem;color:var(--text);margin:2rem 0 1rem;font-weight:800}
+    ul.bullets{list-style:square; padding-left:2rem; margin:0 0 1.25rem 0}
+    ul.bullets li{margin:.6rem 0}
+    ul.bullets em{font-style:italic}
+    a{color:var(--link)}
+
+    footer{padding:2rem 0;color:var(--muted);text-align:right;font-size:0.8rem}
   </style>
 </head>
 <body>
@@ -41,33 +46,14 @@
 </header>
 
 <main class="container">
-  <h1>Teaching</h1>
 
   <section>
-    <h2>Courses</h2>
-
-    <div class="course">
-      <strong>Principles of Microeconomics</strong> — Teaching Assistant, Fall 2021, Winter 2022
-      <div class="meta">Sections taught: 2 • Responsibilities: discussion sections, problem sets, office hours</div>
-      <!-- Optional materials links -->
-      <!-- <a href="#" target="_blank">Syllabus</a> · <a href="#" target="_blank">Slides</a> -->
-    </div>
-
-    <!-- <div class="course">
-      <strong>Public Economics</strong> — Instructor, Fall YYYY
-      <div class="meta">Undergraduate lecture • Designed assessments and grading rubrics • Office hours 2/wk</div>
-    </div>
-
+    <h2 class="role">Graduate Student Instructor, University of Michigan</h2>
+    <ul class="bullets">
+      <li>Principles of Microeconomics (Undergraduate), <em>Fall 2021</em></li>
+      <li>Principles of Microeconomics (Undergraduate), <em>Winter 2022</em></li>
+    </ul>
   </section>
-
-  <section>
-    <h2>Teaching Statement</h2>
-    <p>Download my <a href="teaching_statement.pdf" target="_blank" rel="noopener">Teaching Statement (PDF)</a>.</p>
-  </section> -->
-
-  <footer>
-    <p>© <span id="y"></span> Your Name • Last updated <time id="lu"></time></p>
-  </footer>
 </main>
 <script>
   document.getElementById('y').textContent=new Date().getFullYear();
